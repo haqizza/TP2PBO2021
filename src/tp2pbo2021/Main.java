@@ -34,6 +34,7 @@ public class Main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
         tpMain = new javax.swing.JTabbedPane();
         pnlForm = new javax.swing.JPanel();
         lblMerk = new javax.swing.JLabel();
@@ -49,6 +50,11 @@ public class Main extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tblMobil = new javax.swing.JTable();
         pnlInfo = new javax.swing.JPanel();
+        lblNama = new javax.swing.JLabel();
+        lblNIM = new javax.swing.JLabel();
+        lblFoto = new javax.swing.JLabel();
+
+        jFormattedTextField1.setText("jFormattedTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -124,7 +130,7 @@ public class Main extends javax.swing.JFrame {
             .addGroup(pnlFormLayout.createSequentialGroup()
                 .addGap(167, 167, 167)
                 .addComponent(btnSubmit)
-                .addContainerGap(176, Short.MAX_VALUE))
+                .addContainerGap(179, Short.MAX_VALUE))
         );
         pnlFormLayout.setVerticalGroup(
             pnlFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +153,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(cmbJenis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(btnSubmit)
-                .addContainerGap(199, Short.MAX_VALUE))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
 
         tpMain.addTab("Form", pnlForm);
@@ -177,24 +183,52 @@ public class Main extends javax.swing.JFrame {
         pnlTable.setLayout(pnlTableLayout);
         pnlTableLayout.setHorizontalGroup(
             pnlTableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 418, Short.MAX_VALUE)
         );
         pnlTableLayout.setVerticalGroup(
             pnlTableLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 392, Short.MAX_VALUE)
         );
 
         tpMain.addTab("Table", pnlTable);
+
+        lblNama.setText("Nama : Muhammad Izzatul Haq");
+
+        lblNIM.setText("NIM : 1904618");
+
+        lblFoto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/foto.jpg"))); // NOI18N
+        lblFoto.setText("jLabel3");
+        lblFoto.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                lblFotoComponentShown(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlInfoLayout = new javax.swing.GroupLayout(pnlInfo);
         pnlInfo.setLayout(pnlInfoLayout);
         pnlInfoLayout.setHorizontalGroup(
             pnlInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 415, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlInfoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(pnlInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblNIM)
+                    .addComponent(lblNama))
+                .addGap(231, 231, 231))
+            .addGroup(pnlInfoLayout.createSequentialGroup()
+                .addGap(158, 158, 158)
+                .addComponent(lblFoto, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlInfoLayout.setVerticalGroup(
             pnlInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 402, Short.MAX_VALUE)
+            .addGroup(pnlInfoLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(lblNama)
+                .addGap(18, 18, 18)
+                .addComponent(lblNIM)
+                .addGap(18, 18, 18)
+                .addComponent(lblFoto)
+                .addContainerGap(154, Short.MAX_VALUE))
         );
 
         tpMain.addTab("Info", pnlInfo);
@@ -203,11 +237,13 @@ public class Main extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tpMain)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(tpMain, javax.swing.GroupLayout.PREFERRED_SIZE, 418, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(tpMain, javax.swing.GroupLayout.DEFAULT_SIZE, 435, Short.MAX_VALUE)
+            .addComponent(tpMain, javax.swing.GroupLayout.DEFAULT_SIZE, 425, Short.MAX_VALUE)
         );
 
         pack();
@@ -267,6 +303,10 @@ public class Main extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_pnlTableComponentShown
 
+    private void lblFotoComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_lblFotoComponentShown
+        // TODO add your handling code here:
+    }//GEN-LAST:event_lblFotoComponentShown
+
     /**
      * @param args the command line arguments
      */
@@ -305,9 +345,13 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSubmit;
     private javax.swing.JComboBox<String> cmbJenis;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblFoto;
     private javax.swing.JLabel lblJenis;
     private javax.swing.JLabel lblMerk;
+    private javax.swing.JLabel lblNIM;
+    private javax.swing.JLabel lblNama;
     private javax.swing.JLabel lblPlat;
     private javax.swing.JLabel lblWarna;
     private javax.swing.JPanel pnlForm;
