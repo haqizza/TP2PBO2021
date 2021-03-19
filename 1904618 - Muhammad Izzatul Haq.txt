@@ -1,0 +1,10 @@
+Saya Muhammad Izzatul Haq mengerjakan Tugas Praktikum 2 PBO dalam praktikum mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahanNya maka saya tidak melakukan kecurangan seperti yang telah di spesifikasikan. Aamiin.
+
+
+# Catatan
+Saya pakai flatlaf untuk UI, kalau error download dulu ya kang sebelum dicoba.
+
+
+Kesulitan yang saya hadapi saat menghubungkan class Mobil dengan class untuk koneksi ke database, ada beberapa error null, yang ternyata harus dilakukan koneksi di setiap method
+
+hal baru yang saya dapatkan diantaranya koneksi ke database dengan Java dan pemrograman UI Java juga saya baru pertama kali mencoba
